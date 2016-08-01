@@ -1,3 +1,3 @@
-# Gitѧϰ
+# mygit
 
 xianlong
