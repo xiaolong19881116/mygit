@@ -1,3 +1,5 @@
 # mygit
 
 xianlong
+
+feature B 
