@@ -1,2 +1,5 @@
 abc
 xianlong
+
+#pull remote
+git pull origin dev
