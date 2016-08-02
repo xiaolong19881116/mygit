@@ -3,3 +3,6 @@ xianlong
 
 #pull remote
 git pull origin dev
+
+test 
+git fetch git@github.com:xiaolong19881116/mygit.git
