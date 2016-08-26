@@ -2,7 +2,7 @@
 
 # -*- coding:utf-8 -*-
 
-"this is a test module for BinaryTree"
+"this is a test module for string"
  
 __author__ = 'mxl'
 
