@@ -13,6 +13,7 @@ def func(x,y):
     for i in range(x,y):
         print i
     time.sleep(8)
+    print "**"
 
 t1 = threading.Thread(target = func,args = (15,20))
 t1.start()
