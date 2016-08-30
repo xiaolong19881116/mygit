@@ -17,6 +17,7 @@ output_file("test_line.html")
 #´´½¨Í¼Àý
 p = figure(title = "Simple line",x_axis_label = "x",y_axis_label = "y")
 p.line(x,y,legend = "Temp")
+p.multi_line([[1,3,2],[3,4,6,6]],[[2,1,4],[4,7,8,5]],color = ["firebrick","navy"],alpha=[0.8,0.3],line_width = 3)
 
 #ÏÔÊ¾Í¼Àý£º
 show(p)
