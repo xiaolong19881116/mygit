@@ -1,0 +1,47 @@
+利用Sphinx为python项目生成文档
+
+Sphinx最初是为python而产生的，用于生成新的python官方文档, 现可支持其它语言.
+
+以下环境都为 Ubuntu14.04+python3.4
+
+安装Sphnix:
+  $ pip3 search Sphinx
+  $ pip3 install Sphinx
+
+为项目生成文档(sphinx支持从 .py代码提取docstring来生成文档)
+$ cd myproject
+$ ls 
+a.py    b.py    c.py
+$  sphinx-quickstart
+Enter the root path for documentation.
+> Root path for the documentation [.]: doc
+> autodoc: automatically insert docstrings from modules (y/n) [n]: y
+其它项都选择默认
+完成之后，会在当前目录创建 doc 目录. 所有sphinx相关的文件都在 doc目录下
+
+$ ls doc/
+_build  conf.py  index.rst  Makefile  _static  _templates
+
+*****************注意**********************
+一定要更改 doc/conf.py
+$ vi doc/conf.py
+sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('..'))   #　**IMPORTANT**  缺少此行会导致在make html时提示 __import__出错. 所以必须把上一级目录(即代码所在目录)include进来
+
+生成apidoc
+$ sphinx-apidoc -o .doc/ .
+Creating file doc/a.rst.
+Creating file doc/modules.rst
+
+# 把生成的 doc/modules.rst添加到index.rst
+$ vi doc/index.rst
+
+Contents:
+ .. toctree::
+    :maxdepth: 2
+
+    modules.rst
+
+生成html页面
+$ cd doc
+$ make html

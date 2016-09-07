@@ -1,0 +1,1 @@
+Search.setIndex({envversion:49,filenames:["index"],objects:{},objnames:{},objtypes:{},terms:{content:0,filesplit:0,index:0,mapper:0,maxdepth:0,modul:0,page:0,reduc:0,search:0,toctre:0},titles:["Welcome to MapReduce&#8217;s documentation!"],titleterms:{"09bigdata":0,document:0,indice:0,mapreduc:0,tabl:0,welcom:0}})
