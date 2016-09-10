@@ -32,7 +32,38 @@ print df["A"]["end"]
 print "---------------------------------------------"
 
 "读取 csv 文件"
-marks = pd.read_csv("abc.csv") #as DataFrame
+# https://picklecai.gitbooks.io/omoocdata/content/note/classnote/ch4pandas.html 
+# df_pop = pd.read_csv("european_cities.csv", delimiter=",", encoding="utf-8", header=0)
+# df_pop.info() # 观察元信息
+# df_pop["NumericPopulation"] = df_pop.Population.apply(lambda x:int(x.replace(",",""))) 
+# df_pop["State"].values[:3] 
+# df.head() #取前几行信息
+# df.ix[['Paris','Rome']] 读取多行
+# df_pop["State"] = df_pop.State.apply(lambda x: x.strip()) 
+
+# df_pop2 = df_pop.set_index("City")
+# df_pop2 = df_pop2.sort_index()
+# df_pop3 = df_pop.set_index(["State","City"]) 
+# df_pop3 = df_pop.set_index(["State","City"]).sortlevel(0) 
+# df_pop3.ix["Sweden"]
+
+# df_pop.set_index("City").sort(["State", "NumericPopulation"], ascending=[False, True]).head() 
+
+# df_pop3 = df_pop[["State", "City", "NumericPopulation"]].set_index(["State", "City"])
+
+
+##fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12,4))
+##
+##city_counts.plot(kind="barh", ax=ax1)
+##ax1.set_xlabel("# cities in top 105")
+##
+##df_pop5.NumericPopulation.plot(kind="barh", ax=ax2)
+##ax2.set_xlabel("Total pop in top 105 cities")
+##
+##fig.tight_layout()
+##fig.savefig("ch4-state-city-counts-sum.pdf")
+##
+##marks = pd.read_csv("abc.csv") #as DataFrame
 print marks
 
 print "---------------------------------------------"
