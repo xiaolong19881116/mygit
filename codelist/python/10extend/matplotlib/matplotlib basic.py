@@ -1,4 +1,5 @@
 '''
+https://picklecai.gitbooks.io/omoocdata/content/note/classnote/ch3matplt.html 
 figure：即画布
 axis：本义是指坐标轴，借指要画的图形。
 xlabel、ylabel：横坐标和纵坐标
