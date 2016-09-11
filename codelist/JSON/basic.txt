@@ -65,5 +65,31 @@ eg:
 
 http://www.jsonschemavalidator.net/ 
 {
-	"$schema": "http://json-schema.org/draft-04/schema#"
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "tittle": "CAT",
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxlength": 20
+    },
+    "age": {
+      "type": "number",
+      "mininum": 0
+    },
+    "desc": {
+      "type": "string"
+    }
+  },
+  "reguired": [
+    "name",
+    "age"
+  ]
+}
+
+JSON
+{
+  "name": "yaya",
+   "age":26,
+   "desc":""
 }
