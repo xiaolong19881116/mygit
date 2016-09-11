@@ -1,0 +1,69 @@
+JSON 是一种数据的交换格式，xml，csv等等都是数据交换格式，它独立于编程语言，有着比较友好的数据表现形式；
+JSON语法：
+eg：
+{
+ "brand":"Crocs",
+ "color":"pink",
+ "size":9,
+ "hasLaces":false
+}
+----------------------------------------------
+* { (左花括号)指：开始读取对象
+* } (右花括号)指：结束读取对象
+* [ (左中括号)指：开始读取数组
+* ] (右中括号)指：结束读取数组
+* ：(冒号) 指：名称:值的分隔
+* , (逗号) 指：分隔对象中的 名称：值对或者数组中的值
+
+注：在JSON中名称统一使用双引号，不带引号或者单引号是验证不通过的！
+JSON在线编辑验证工具：http://jsoneditoronline.org/ 
+
+JSON文件 .json
+
+JSON中的数据类型有：
+* 对象
+* 字符串
+* 数字
+* 布尔值
+* null
+* 数组
+eg:对象嵌套
+{
+  "brand": "Crocs",
+  "color": "pink",
+  "size": 9,
+  "hasLaces": false,
+  "xianlong":{
+    "name":"xianlong.mxl",
+    "age":28
+  }
+}
+
+
+JSON中的转义字符
+* \/(正斜线)
+* \b(退格)
+* \f(换页)
+* \t(制表)
+* \n(换行)
+* \r(回车)
+* \u(十六进制)
+
+eg:
+{
+  "brand": "Crocs",
+  "color": "pink",
+  "size": 9,
+  "hasLaces": false,
+  "xianlong":{
+    "name":"xianlong.mxl",
+    "age":28
+  },
+  "loc":"C:\\Program files",
+  "story":"hello \\n world"
+}e
+
+http://www.jsonschemavalidator.net/ 
+{
+	"$schema": "http://json-schema.org/draft-04/schema#"
+}
