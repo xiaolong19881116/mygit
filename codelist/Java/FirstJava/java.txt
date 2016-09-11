@@ -1,0 +1,1 @@
+*.java  -javac.exe-> *.class -java.exe->*.exe
