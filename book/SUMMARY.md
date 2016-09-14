@@ -13,3 +13,5 @@
   - [Github集成](publish/github.md)
   - [发布到Github Pages](publish/gitpages.md)
 * [结束](end/README.md)
+
+gitbook pdf gitbook-studying gitbook-studying/gitbook入门教程.pdf
