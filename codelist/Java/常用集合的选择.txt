@@ -1,0 +1,22 @@
+七、对集合的选择
+7.1、对 List 的选择
+
+1、对于随机查询与迭代遍历操作，数组比所有的容器都要快。所以在随机访问中一般使用 ArrayList
+
+2、LinkedList 使用双向链表对元素的增加和删除提供了非常好的支持，而 ArrayList 执行增加和删除元素需要进行元素位移。
+
+3、对于 Vector 而已，我们一般都是避免使用。
+
+4、将 ArrayList 当做首选，毕竟对于集合元素而已我们都是进行遍历，只有当程序的性能因为 List 的频繁插入和删除而降低时，再考虑 LinkedList。
+
+7.2、对 Set 的选择
+
+1、HashSet 由于使用 HashCode 实现，所以在某种程度上来说它的性能永远比 TreeSet 要好，尤其是进行增加和查找操作。
+
+3、虽然 TreeSet 没有 HashSet 性能好，但是由于它可以维持元素的排序，所以它还是存在用武之地的。
+
+7.3、对 Map 的选择
+
+1、HashMap 与 HashSet 同样，支持快速查询。虽然 HashTable 速度的速度也不慢，但是在 HashMap 面前还是稍微慢了些，所以 HashMap 在查询方面可以取代 HashTable。
+
+2、由于 TreeMap 需要维持内部元素的顺序，所以它通常要比 HashMap 和 HashTable 慢。
