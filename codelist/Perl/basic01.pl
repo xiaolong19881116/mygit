@@ -60,3 +60,8 @@ print "\n";
 my $line = <STDIN>;
 print $line;
 print "\n";
+
+while(<>){#Ä¬ÈÏÊäÈëµ½$_ 
+chomp;
+print $_;
+}
