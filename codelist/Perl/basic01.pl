@@ -65,3 +65,13 @@ while(<>){#Ä¬ÈÏÊäÈëµ½$_
 chomp;
 print $_;
 }
+
+print "\n";
+sub mymax{
+my($m,$n);
+($m,$n) = @_;
+if($m > $n) {$m} else {$n}
+}
+$v = &mymax(12,25);
+print "my max value:".$v;
+print "\n";
