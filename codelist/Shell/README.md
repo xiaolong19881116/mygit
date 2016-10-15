@@ -1,11 +1,9 @@
 Shell编程
 
-'''
-#!bin/bash
-date #显示日期
 
-who #显示登录用户
-'''
+    #!bin/bash
+    date #显示日期
+    who #显示登录用户
 
 保存为whologged.sh
 
