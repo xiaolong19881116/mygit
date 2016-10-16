@@ -6,6 +6,8 @@
 - $?	上个命令的退出状态，或函数的返回值。
 - $$	当前Shell进程ID。对于 Shell 脚本，就是这些脚本所在的进程ID。
 
+---
+
     #!/bin/bash
     echo "File Name: $0"
     echo "First Parameter : $1"
@@ -15,6 +17,7 @@
     echo "Total Number of Parameters : $#"
 
 运行结果：
+
     $./test.sh Zara Ali
     File Name : ./test.sh
     First Parameter : Zara
