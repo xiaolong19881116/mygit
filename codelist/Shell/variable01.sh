@@ -25,3 +25,7 @@ for skill in Ada Coffe Action Java
 do
     echo "I am good at ${skill}Script"
 done
+
+myUrl="http://see.xidian.edu.cn/cpp/shell/"
+readonly myUrl
+echo ${myUrl}
