@@ -24,3 +24,10 @@
     Logged in user are 1
     Uptime is Thu Jul  2 03:59:57 MST 2009
     03:59:57 up 20 days, 14:03,  1 user,  load avg: 0.13, 0.07, 0.15
+
+#命令替换是的shell与其他语言结合起来
+
+    gcc -o simpleC simpleC.c
+    testc = `./simpleC`
+    echo $testc
+    echo $?
