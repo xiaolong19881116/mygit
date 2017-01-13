@@ -1,15 +1,18 @@
-import urllib2
+#/user/bin/env python   
+
+# -*- coding:utf-8 -*-
+import urllib.request
 
 class HtmlDownloader(object):
-	"""下载URL内容"""
-	def download(self, url):
-		if url is None:
-			return None
 
-		html = urllib2.urlopen(url)
-
-		if html.getcode() != 200:
-			return None
-
-		return html.read()
-		
+    def download(self, url):
+        if url is None:
+            return None
+        
+        html = urllib.request.urlopen(url)
+        
+        if html.getcode() != 200:
+            return None
+        
+        return html.read()
+        
